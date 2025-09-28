@@ -85,16 +85,9 @@
   transform: scale(1.03);
 }
 
-.feature-card img {
-  margin-bottom: 12px;
-}
-
 .feature-icon {
   display: inline-block;
-  width: 64px;
-  height: 64px;
   color: var(--border-color, border-default);
-  border: 1px solid red;
 }
 
 @media (max-width: 600px) {
