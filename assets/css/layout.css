@@ -28,6 +28,8 @@ main {
   width: 60%;
   height: 2px;
   background-color: var(--border-color, --border-default);
+  column-fill: color: var(--border-color, --border-default);
+  color: var(--border-color, --border-default);
   margin: 24px auto;
   opacity: 0.4;
 }
