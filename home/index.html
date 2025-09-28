@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+</head>
+
+<body>
+    <nav class="spaceboi-navbar">
+        <div class="nav-brand"><span>Spaceboi</span></div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/portfolio/">Portfolio</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+            <div class="nav-controls"><button id="themeToggle" class="theme-toggle" onclick="toggleTheme()"><span id="themeIcon">⏾</span></button><button id="hamburger" class="hamburger">☰</button></div>
+        </div>
+    </nav><div class="intro-section">
+  <img src="../assets/img/profile.png" class="rounded-circle" alt="Profile Icon">
+  <div class="intro-text">
+    <h1 class="hero-heading">Hey there, I'm Joe 👋</h1>
+    <p class="hero-subtext">I'm a 21 y/o gaming and creative enthusiast from England.<br>Specialties include Discord (Guilds/Bots), Minecraft Server Design,<br>Digital Marketing, Web Design, Graphic Design, supporting you!<br>Blending technical precision with digital flair!</p>
+  </div>
+</div>
+<hr class="divider">
+<div class="skills-grid">
+  <a href="/portfolio/#discord" class="badge">Discord</a>
+  <a href="/portfolio/#minecraft" class="badge">Minecraft</a>
+  <a href="/portfolio/#marketing" class="badge">Marketing</a>
+  <a href="/portfolio/#web-design" class="badge">Web Design</a>
+  <a href="/portfolio/#graphic-design" class="badge">Graphic Design</a>
+</div>
+<div class="features-section">
+  <div class="feature-card">
+    <svg class="feature-icon">
+      <use href="#icon-ontime" />
+    </svg>
+    <h4>ON TIME PROMISE</h4>
+    <p>Or 25% off<br>— Your time matters (even in orbit)</p>
+  </div>
+  <div class="feature-card">
+    <svg class="feature-icon">
+      <use href="#icon-quality" />
+    </svg>
+    <h4>HIGHEST STANDARD GUARANTEED</h4>
+    <p>Pixel-perfect, modular, and built to last<br>— "good enough", isn't good enough</p>
+  </div>
+  <div class="feature-card">
+    <svg class="feature-icon">
+      <use href="#icon-recommended" />
+    </svg>
+    <h4>RECOMMENDED BY MYSELF</h4>
+    <p>I built it, I back it, and yes<br>— It's Space-approved</p>
+  </div>
+</div>
+<hr class="divider">
+
+<script>
+  fetch('../assets/img/list.svg')
+    .then(res => res.text())
+    .then(svg => {
+      const div = document.createElement('div');
+      div.style.display = 'none';
+      div.innerHTML = svg;
+      document.body.insertBefore(div, document.body.firstChild);
+    });
+</script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

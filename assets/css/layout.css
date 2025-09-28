@@ -1,0 +1,81 @@
+body {
+  background-color: var(--bg-color, --bg-default);
+  color: var(--text-color, --text-default);
+  font-size: var(--body-font-size);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  font-size: var(--header-font-size);
+  padding: 40px 20px 20px;
+  border-bottom: 2px solid var(--border-color, --border-default);
+}
+
+h2 {
+  font-size: var(--header2-font-size);
+  margin-top: 20px;
+  color: var(--secondary-color, --secondary-default);
+}
+
+main {
+  padding: 20px;
+}
+
+.divider {
+  width: 60%;
+  height: 2px;
+  background-color: var(--border-color, --border-default);
+  margin: 24px auto;
+  opacity: 0.4;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.border.rounded-circle {
+  border: 2px solid var(--secondary-color, --secondary-default);
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(160, 132, 202, 0.5);
+}
+
+.border.rounded-circle:hover {
+  border-color: var(--primary-color, --primary-default);
+  transition: border-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .center-wrapper {
+    gap: 4px;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .center-wrapper p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .center-wrapper p {
+    font-size: 0.8rem;
+  }
+}
+
+footer {
+  height: var(--footer-height);
+  background-color: var(--accent-color, --accent-default);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
